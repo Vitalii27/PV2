@@ -1,0 +1,88 @@
+.options {
+  background-color: $black;
+  &_content {
+
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 4.5%;
+    text-align: center;
+  }
+  &_arrow-left {
+    position: absolute;
+    left: -12.5rem;
+    top: 3.5rem;
+  }
+  &_arrow-right {
+    position: absolute;
+    right: -12.5rem;
+    top: 3.5rem;
+  }
+  &_title {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 4rem;
+  }
+  &_list {
+    margin-top: 2rem;
+  }
+  &_item {
+    display: inline-block;
+    background-color: rgba($orange, 1);
+
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-family: $title-font;
+    font-weight: 600;
+    max-width: 19rem;
+    margin-right: 2rem;
+    transition: all .25s;
+    margin-top: 2rem;
+    a{
+      display: block;
+      height: 100%;
+      padding: 5rem 0;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 14px 4px rgba($orange, .5);
+
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md-max) {
+  .options{
+    &_title{
+      padding-top: 0;
+    }
+    &_arrow-left, &_arrow-right{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .options_content{
+    background-image: none !important;
+  }
+  .options_title{
+    color: $white;
+  }
+  .options_item{
+    margin-right: 1.3rem;
+    margin-top: 1.3rem;
+    &:last-child {
+      margin-right: 1.3rem;
+    }
+  }
+}
+

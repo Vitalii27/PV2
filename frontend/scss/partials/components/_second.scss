@@ -1,0 +1,26 @@
+.second{
+  margin-top: -15rem;
+  background-color: $black;
+  &_wrapper{
+    margin-top: 20rem;
+    text-align: center;
+  }
+  &_title{
+    font-family: $title-font;
+    font-size: 3.6rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: $screen-md-max) {
+
+}
+@media only screen and (max-width: $screen-sm-max) {
+  .second {
+    margin-top: -14rem;
+  }
+  .second_title{
+    font-size: 3rem;
+  }
+
+
+}
