@@ -2,7 +2,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: $black;
-    padding: 23rem 0;
+    padding: 13rem 0;
     position: relative;
     &_content {
         max-width: 65.5rem;
@@ -61,7 +61,16 @@ text-transform: uppercase;
         }
     }
 }
+.man_btn{
+    color: #000;
+    transition: all .25s;
 
+}
+
+.man_btn:hover{
+    color: #fff;
+    box-shadow: 0 0 10px 4px rgba(233,144,6,.5);
+}
 @media only screen and (max-width: $screen-xlg-max) {
     .man {
         &_img {
@@ -69,23 +78,33 @@ text-transform: uppercase;
         }
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .options_item{
+        max-width: 17.5rem;
+    }
+}
 @media only screen and (max-width: $screen-md-max) {
     .man {
         padding: 2rem 0 8rem;
+    }
+    .man_content{
+        margin: 0 auto;
+        text-align: center;
     }
 }
 @media only screen and (max-width: $screen-sm-max) {
     .man_title {
         font-size: 3.5rem;
     }
-    .man_content{
-        margin: 0 auto;
-        text-align: center;
-    }
+
 
 }
 
 @media only screen and (max-width:420px) {
+    .man{
+        padding-top: 1rem;
+    }
     .options_item{
         margin-right: 0 !important;
     }

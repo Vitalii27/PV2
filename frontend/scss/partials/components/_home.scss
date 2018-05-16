@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: $screen-xlg-max) {
   .home{
-    height: 50rem;
+    height: 54rem;
   }
   .home_title-text{
     font-size: 4rem;
@@ -60,7 +60,7 @@
   }
   .home_video {
 
-    padding-bottom: 30%;
+    padding-bottom: 33%;
     max-width: 61rem;
 
   }
@@ -74,6 +74,11 @@
   }
   .home {
     max-height: 65rem;
+    height: 56rem;
+  }
+  .home_video {
+    padding-bottom: 50%;
+
   }
 }
 
@@ -84,10 +89,7 @@
   .home_title-text {
     font-size: 3.5rem;
   }
-  .home_video {
-    padding-bottom: 50%;
 
-  }
 
 }
 
@@ -100,5 +102,14 @@
 @media only screen and (max-width: 480px) {
   .home{
     max-height: 43rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home{
+    max-height: 45rem;
+  }
+  .home_video{
+    padding-bottom: 60%;
   }
 }

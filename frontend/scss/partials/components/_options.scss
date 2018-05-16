@@ -4,7 +4,7 @@
 
     background-repeat: no-repeat;
     background-position: center;
-    padding-bottom: 4.5%;
+    padding-bottom: 5.5%;
     text-align: center;
   }
   &_arrow-left {
@@ -83,6 +83,12 @@
     &:last-child {
       margin-right: 1.3rem;
     }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .options_content{
+    padding-bottom: 0;
   }
 }
 
